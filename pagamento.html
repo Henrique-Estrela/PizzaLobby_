@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <title>PizzaLobby</title>
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="img/icon_lobby.png" type="image/png">
+
+
+</head>
+<body>
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg  scrolling-navbar indigo">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand">
+              <img onclick="location.href = 'index.php';"  class="img-fulid imglobby" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="lnr lnr-menu"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll active2" href="index.php">Sair</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+            <li class="nav-item">
+                <a class="page-scroll" href="index.php">Sair</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+
+      <div class="popular-forms ">
+
+          <div class="row pricing-tables centralize-lado">
+              <div class="col-md-8 col-sm-12 col-xs-12">
+                <form >
+                  <div class="pricing-table">
+                    <div class="pricing-details ">
+                      <h2 class="font-forms">Pagamento</h2>
+                      <ul>
+                        <label class="label-pop">Qual Sua forma de pagamento?</label>
+                        <select class="form-control2" id="pagamento" name="pagamento" required>
+                              <option value="VAZIO">Selecione a forma de pagamento...</option >
+                              <option value="CARTAO" required>CARTÃO</option>
+                              <option value="DINHEIRO" required>DINHEIRO</option>
+                              <option value="PIX" required>PIX</option>
+
+
+                            </select>                     
+                      </ul>
+                    </div>
+
+                    <div  class="plan-button">
+                    <input  onclick="completo()"  type="button" class="btn btn-common" value="Pagamento">
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>
+<script>
+     function completo() {
+    
+
+     Swal.fire({
+        icon:'info',
+        title: 'Prontinho!',
+        text:'Aguarde em seu e-mail, nossa equipe logo entrará em contato!',
+        confirmButtonText: 'Ok',
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            window.location.href="index.html"
+        } else {
+          window.location.href="index.html"
+        }
+      })
+  }
+</script>
+
+
+
+<script src="js/jquery-min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script src="js/owl.carousel.js"></script>    
+<script src="js/jquery.stellar.min.js"></script>    
+<script src="js/jquery.nav.js"></script>    
+<script src="js/scrolling-nav.js"></script>    
+<script src="js/jquery.easing.min.js"></script>    
+<script src="js/smoothscroll.js"></script>    
+<script src="js/jquery.slicknav.js"></script>     
+<script src="js/wow.js"></script>   
+<script src="js/jquery.vide.js"></script>
+<script src="js/jquery.counterup.min.js"></script>    
+<script src="js/jquery.magnific-popup.min.js"></script>    
+<script src="js/waypoints.min.js"></script>    
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>   
+<script src="js/main.js"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/mask.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input[name=venda]').mask('Uma média de 0000');
+        $('input[name=telefone]').mask('(00) 00000-0000');
+    });
+
+
+
+ 
+</script>
+
+
+
+</body>
+</html>

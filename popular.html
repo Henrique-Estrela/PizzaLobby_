@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaLobby</title>
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="img/icon_lobby.png" type="image/png">
+
+
+</head>
+<body>
+
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg  scrolling-navbar indigo">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand">
+              <img onclick="location.href = 'index.php';"  class="img-fulid imglobby" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="lnr lnr-menu"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll active2" href="index.php">Sair</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+            <li class="nav-item">
+                <a class="page-scroll" href="index.php">Sair</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+
+      <div class="popular-forms ">
+
+          <div class="row pricing-tables centralize-lado">
+              <div class="col-md-8 col-sm-12 col-xs-12">
+                <form  action="pagamento.php"  method="POST">
+                  <div class="pricing-table">
+                    <div class="pricing-details ">
+                      <h2 class="font-forms">Cadastro</h2>
+                      <ul>
+                        <label class="label-pop">Nome Completo</label>
+                        <input class="form-control2" type="text" name="nome" id="nome"  required>                        
+                      </ul>
+                      <ul>
+                        <div class="flex col-md-12 col-sm-12 col-xs-12">
+
+                          <div class="col-md-6 col-sm-12">
+                            <label class="label-pop">Telefone</label>
+                            <input class="form-control2 " type="text" name="telefone" id="telefone" required><br>
+                          </div>
+
+                          <div class="col-md-6 col-sm-12">
+                            <label class="label-pop">E-mail</label>
+                            <input class="form-control2 " type="email" name="email" id="email" required>
+                          </div>
+
+                        </div>
+                      </ul>
+                      <ul>
+                        <label class="label-pop">Nome do Estabelecimento:</label>
+                        <input class="form-control2" type="text" name="nome" id="nome" required>                        
+                      </ul>
+                      <ul>
+                        <div class="flex col-md-12 col-sm-12 col-xs-12">
+
+                          <div class="col-md-6 col-sm-12">
+                            <label class="label-pop" for="telefone">Media de vendas:</label>
+                            <input class="form-control2" type="text" name="venda" id="venda" required>
+                          </div>
+
+                          <div class="col-md-6 col-sm-12">
+                            <label class="label-pop"  for="computador">Tem computador:</label>
+                            <select class="form-control2" id="computador" name="computador" required>
+                              <option value="VAZIO"></option>
+                              <option value="SIM">SIM</option>
+                              <option value="NAO">NÃO</option>
+                            </select>
+                          </div>
+
+                        </div>
+                      </ul>
+                      <div class="flex centralize-lado aceite-div">
+                        <input type="checkbox" name="aceite" id="aceite" required>
+                        <p>Ao clicar no botão, você aceita nossos <u>termos de uso</u> e <u>política de privacidade.</u></p>
+                      </div>
+                    </div>
+
+                    <div class="plan-button">
+                      <input  type="submit" class="btn btn-common" value="Pagamento">
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+<script src="js/jquery-min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script src="js/owl.carousel.js"></script>    
+<script src="js/jquery.stellar.min.js"></script>    
+<script src="js/jquery.nav.js"></script>    
+<script src="js/scrolling-nav.js"></script>    
+<script src="js/jquery.easing.min.js"></script>    
+<script src="js/smoothscroll.js"></script>    
+<script src="js/jquery.slicknav.js"></script>     
+<script src="js/wow.js"></script>   
+<script src="js/jquery.vide.js"></script>
+<script src="js/jquery.counterup.min.js"></script>    
+<script src="js/jquery.magnific-popup.min.js"></script>    
+<script src="js/waypoints.min.js"></script>    
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>   
+<script src="js/main.js"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/mask.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input[name=venda]').mask('Uma média de 0000');
+        $('input[name=telefone]').mask('(00) 00000-0000');
+    });
+</script>
+
+
+
+</body>
+</html>
